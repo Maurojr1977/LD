@@ -1,0 +1,19 @@
+{
+  "name": "duolingohack",
+  "version": "1.0.0",
+  "description": "A hack for Duolingo to spoof lessons for XP.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://idkyet.github.com/idk"
+  },
+  "author": "Cole Bauml",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "type": "module"
+}
