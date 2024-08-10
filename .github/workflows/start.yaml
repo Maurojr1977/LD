@@ -1,4 +1,3 @@
----
 name: 'Start XP Grinder'
 run-name: XP Grinder by ${{ github.actor }} is running!
 
@@ -38,4 +37,3 @@ jobs:
           lessonsToComplete: ${{ inputs.lessonsToComplete }}
           token: ${{ inputs.token }}
           userId: ${{ inputs.userId }}
----
