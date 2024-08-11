@@ -1,5 +1,5 @@
 # Duolingo XP Hack
-![image of duo](https://static.wikia.nocookie.net/duolingo/images/4/4a/Duo_waving.svg)
+<img src="https://static.wikia.nocookie.net/duolingo/images/4/4a/Duo_waving.svg" alt="Duo waving" width="200px">
 
 [View my other projects](https://github.com/cole-bauml)
 
