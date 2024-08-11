@@ -25,13 +25,13 @@ Auto XP Farmer for Duolingo.
         ?.split('=')[1];
 ```
 3. After obtaining these values, store each of them as repository secrets. 
-    1. Go to repository Settings > Secrets and variables > Actions
-    2. Click "New repository secret"
-    3. Once in the page, fill out the name for the secret.
+    - Go to repository Settings > Secrets and variables > Actions
+    - Click "New repository secret"
+    - Once in the page, fill out the name for the secret.
         - If entering your token, name should be: TOKEN
         - If entering your user ID, name should be: USER_ID
-    4. Click add secret
-    5. Repeat for both token and user ID.
+    - Click add secret
+    - Repeat for both token and user ID.
 
 ### How to use:
 1. At the top of the page, navigate to the Actions button. 
