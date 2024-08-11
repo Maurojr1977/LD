@@ -8,14 +8,6 @@ on:
         description: 'Amount of fake lessons to complete.'
         required: true
         default: 5
-      token:
-        description: 'Your Duolingo auth token. (Instructions to get in .env file.)'
-        required: true
-        default: ''
-      userId:
-        description: 'Your Github user ID (Instructions to get in .env file.)'
-        required: true
-        default: ''
 
 jobs:
   check-bats-version:

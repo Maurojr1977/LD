@@ -5,9 +5,9 @@
 
 Auto XP Farmer for Duolingo.
 
-### Information you will need.
+### Preperation (required)
 1. Duolingo Auth Token
-    - To get this information run the following code in your browser console:
+    - To get this information run the following code in your web browser console:
 ```
     document.cookie
         .split(';')
@@ -16,7 +16,7 @@ Auto XP Farmer for Duolingo.
         ?.split('=')[1];
 ```
 2. Duolingo User ID
-    - To get this information run the following code in your browser console:
+    - To get this information run the following code in your web browser console:
 ```
     document.cookie
         .split(';')
@@ -24,14 +24,21 @@ Auto XP Farmer for Duolingo.
         .find(cookie => cookie.includes('logged_out_uuid'))
         ?.split('=')[1];
 ```
-This information WILL be needed in the How to use header below.
+3. After obtaining these values, store each of them as repository secrets. 
+    1. Go to repository Settings > Secrets and variables > Actions
+    2. Click "New repository secret"
+    3. Once in the page, fill out the name for the secret.
+        - If entering your token, name should be: TOKEN
+        - If entering your user ID, name should be: USER_ID
+    4. Click add secret
+    5. Repeat for both token and user ID.
 
 ### How to use:
 1. At the top of the page, navigate to the Actions button. 
 2. If prompted, click the button to enable workflows.
 3. On the left of the page, click the hack you want to run. (Currently only "Start XP Grinder," being an option.)
 4. On the right of the page click the Run Workflow button. 
-5. Fill out the information, and click Run Workflow. (see above to get required information.)
+5. Enter how many fake lessons you want completed, and click Run Workflow.
 6. The hack will start the attack, and you can refresh your Duolingo leaderboard to see it update in real-time.
 
 ### FAQ:
