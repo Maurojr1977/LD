@@ -35,5 +35,5 @@ jobs:
       - run: npm run startGrinder
         env:
           lessonsToComplete: ${{ github.event.inputs.lessonsToComplete }}
-          token: ${{ github.event.inputs.token }}
-          userId: ${{ github.event.inputs.userId }}
+          token: ${{ secrets.TOKEN }}
+          userId: ${{ secrets.USER_ID }}
