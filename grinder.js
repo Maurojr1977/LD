@@ -12,12 +12,12 @@ function removeQuotes(str) {
     return str;
 }
 
-token = removeQuotes(token)
-userId = removeQuotes(userId)
-
 if(!token || !userId){
     throw new Error('You must specify a user ID and token.')
 }
+
+token = removeQuotes(token)
+userId = removeQuotes(userId)
 
 const headers = {
     "accept": "application/json",

@@ -2,7 +2,7 @@
   "name": "duolingohack",
   "version": "1.0.0",
   "description": "A hack for Duolingo to spoof lessons for XP.",
-  "main": "index.js",
+  "main": "grinder.js",
   "scripts": {
     "startGrinder": "node grinder.js"
   },
