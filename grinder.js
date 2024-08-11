@@ -103,7 +103,7 @@ const initScript = async (formattedFraction) => {
 }
 
 for(var i = 0; i < lessonsToComplete; i++ ){
-    const formattedFraction = i + '/' + lessonsToComplete;
+    const formattedFraction = i+1 + '/' + lessonsToComplete;
     console.log('Running: ' + formattedFraction)
     await initScript(formattedFraction)
 }
