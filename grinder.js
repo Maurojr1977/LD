@@ -1,8 +1,19 @@
 import fetch from 'node-fetch'
 
 const lessonsToComplete = process.env.lessonsToComplete ?? 5;
-const token = process.env.token;
-const userId = process.env.userId;
+var token = process.env.token;
+var userId = process.env.userId;
+
+function removeQuotes(str) {
+    if ((str.charAt(0) === '"' || str.charAt(0) === "'") && 
+        (str.charAt(str.length - 1) === '"' || str.charAt(str.length - 1) === "'")) {
+        return str.slice(1, -1);
+    }
+    return str;
+}
+
+token = removeQuotes(token)
+userId = removeQuotes(userId)
 
 if(!token || !userId){
     throw new Error('You must specify a user ID and token.')
