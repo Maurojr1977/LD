@@ -29,23 +29,21 @@ const headers = {
     "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
 }
 
+const userLanguages = await fetch(`https://www.duolingo.com/2017-06-30/users/${userId}?fields=fromLanguage,learningLanguage`, {
+    headers,
+    body: null,
+    method: "GET",
+}).then((res) => {
+    if (!res.ok) {
+         throw new Error('There was an error getting your languages. Verify your credentials.')
+    }
+    return res.json()
+});
+    
+console.log('Fetched User Languages: ', userLanguages)
 
 const initScript = async (formattedFraction) => {
     try {
-        const userLanguages = await fetch(`https://www.duolingo.com/2017-06-30/users/${userId}?fields=fromLanguage,learningLanguage`, {
-            headers,
-            body: null,
-            method: "GET",
-        }).then((res) => {
-            if (!res.ok) {
-                throw new Error('There was an error getting your languages. Verify your credentials.')
-            }
-            return res.json()
-        });
-    
-        console.log('Fetched User Languages: ', userLanguages)
-    
-    
         const initialSessionBody = {
             challengeTypes: [
                 "listen",
