@@ -26,7 +26,7 @@ async function getUserLanguages(){
         method: "GET",
     }).then((res) => {
         if (!res.ok) {
-             throw new Error('There was an error getting your languages. Verify your credentials.')
+             throw new Error('There was an error getting your languages. Verify your credentials.' + res.text())
         }
         return res.json()
     });
