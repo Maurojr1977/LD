@@ -1,5 +1,5 @@
 import fetch from 'node-fetch'
-import { getUserLanguages, headers, removeQuotes } from './helper';
+import { getUserLanguages, headers, removeQuotes } from './helper.js';
 
 const lessonsToComplete = process.env.lessonsToComplete ?? 5;
 var token = process.env.token;
