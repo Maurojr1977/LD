@@ -36,13 +36,13 @@ Auto XP Farmer for Duolingo.
 ### How to use:
 1. At the top of the page, navigate to the Actions button. 
 2. If prompted, click the button to enable workflows.
-3. On the left of the page, click the hack you want to run. (Currently only "Start XP Grinder," being an option.)
+3. On the left of the page, click the hack you want to run. 
 4. On the right of the page click the Run Workflow button. 
-5. Enter how many fake lessons you want completed, and click Run Workflow.
-6. The hack will start the attack, and you can refresh your Duolingo leaderboard to see it update in real-time.
+5. Fill out all information requested by the hack, and click Run Workflow.
+6. The hack will start the attack, and you can refresh your Duolingo website to see it's affect after it has been completed.
 
 ### FAQ:
-- Will this affect my Duolingo learning path (complete lessons?)
-    - No, it will not. This project creates fake "practice" lessons so it won't affect your learning path.
+- Will the XP hack affect my Duolingo learning path (complete lessons?)
+    - No, it will not. This hack creates fake "practice" lessons so it won't affect your learning path.
 - Is this hack detectable (will I get banned)?
-    - No, it is not. I tested it all night the day of making the project and get 1,000,000 (1 million) XP. However, by doing extreme amounts there is a chance somebody will report you and you will get banned. Just be smart with it.
+    - No, it is not. I tested all hacks overnight before I release them. I got 1,000,000 XP on Duolingo account in one night with XP hack, and it's been weeks with no ban.
