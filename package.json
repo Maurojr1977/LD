@@ -4,11 +4,12 @@
   "description": "A hack for Duolingo to spoof lessons for XP.",
   "main": "grinder.js",
   "scripts": {
-    "startGrinder": "node grinder.js"
+    "xp": "node xp.js",
+    "unlimitedhearts": "node unlimitedhearts.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://idkyet.github.com/idk"
+    "url": "https://github.com/cole-bauml/duolingo-xp-hack"
   },
   "author": "Cole Bauml",
   "license": "ISC",

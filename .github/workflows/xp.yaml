@@ -1,0 +1,31 @@
+name: 'Get XP'
+run-name: Your hack is running! Click me to see it's progress.
+
+on:
+  workflow_dispatch:
+    inputs:
+      lessonsToComplete:
+        description: 'Amount of fake lessons to complete. (Each give 15 XP)'
+        required: true
+        default: 5
+
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v4
+
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+        
+      - run: npm install node-fetch
+
+      - run: npm run xp
+        env:
+          lessonsToComplete: ${{ github.event.inputs.lessonsToComplete }}
+          token: ${{ secrets.TOKEN }}
+          userId: ${{ secrets.USER_ID }}
