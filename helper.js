@@ -1,3 +1,6 @@
+var token = process.env.token;
+var userId = process.env.userId;
+
 const headers = {
     "accept": "application/json",
     "accept-language": "en-US,en;q=0.7",
@@ -6,6 +9,14 @@ const headers = {
     "Referer": "https://www.duolingo.com/practice",
     "Referrer-Policy": "strict-origin-when-cross-origin",
     "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+}
+
+function removeQuotes(str) {
+    if ((str.charAt(0) === '"' || str.charAt(0) === "'") && 
+        (str.charAt(str.length - 1) === '"' || str.charAt(str.length - 1) === "'")) {
+        return str.slice(1, -1);
+    }
+    return str;
 }
 
 async function getUserLanguages(){
@@ -22,16 +33,8 @@ async function getUserLanguages(){
     return userLanguages
 }
 
-function removeQuotes(str) {
-    if ((str.charAt(0) === '"' || str.charAt(0) === "'") && 
-        (str.charAt(str.length - 1) === '"' || str.charAt(str.length - 1) === "'")) {
-        return str.slice(1, -1);
-    }
-    return str;
-}
-
 module.exports = {
     headers,
-    getUserLanguages,
-    removeQuotes
+    removeQuotes,
+    getUserLanguages
 }
