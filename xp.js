@@ -28,8 +28,11 @@ const init = async () => {
                 isV2: true,
                 juicy: true,
                 learningLanguage: userLanguages.learningLanguage,
+                levelIndex: 1,
+                shakeToReportEnabled: true,
+                skillId: "20017c47905904a4bbdfa3ca1b4bd85e", // Random Duolingo Skill ID
                 smartTipsVersion: 2,
-                type: "GLOBAL_PRACTICE"
+                type: "LEGENDARY_LEVEL"
             }
 
             const createdSession = await fetch("https://www.duolingo.com/2017-06-30/sessions", {
@@ -50,14 +53,24 @@ const init = async () => {
                 headers,
                 body: JSON.stringify({
                     ...createdSession,
+                    beginner: false,
+                    challengeTimeTakenCutoff: 6000,
+                    dailyRefreshInfo: null,
                     startTime: (+new Date() - 60000) / 1000,
                     enableBonusPoints: true,
+                    explenations: {},
                     endTime: +new Date() / 1000,
                     failed: false,
                     heartsLeft: 0,
                     hasBoost: true,
                     maxInLessonStreak: 15,
-                    shouldLearnThings: true
+                    shouldLearnThings: true,
+                    level1Index: 1,
+                    progressUpdates: [],
+                    sessionExperimentRecord: [],
+                    sessionStartExperiments: [],
+                    showBestTranslationInGradingRibbon: true,
+                    xpPromised: 201 // Tell Duolingo that I was told I would get 200 xp
                 }),
                 method: 'PUT'
             }).then((res) => {
