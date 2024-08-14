@@ -1,4 +1,4 @@
-const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 const { getUserLanguages, headers, removeQuotes } = require('./helper.js')
 
 const init = async () => {
@@ -55,7 +55,8 @@ const init = async () => {
                     endTime: +new Date() / 1000,
                     failed: false,
                     heartsLeft: 0,
-                    maxInLessonStreak: 10,
+                    hasBoost: true,
+                    maxInLessonStreak: 15,
                     shouldLearnThings: true
                 }),
                 method: 'PUT'

@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       lessonsToComplete:
-        description: 'Amount of fake lessons to complete. (Each give 15 XP)'
+        description: 'Amount of fake lessons to complete. (Each give 30 XP)'
         required: true
         default: 5
 
