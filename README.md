@@ -1,5 +1,5 @@
 # Duolingo Hacks
-<img src="https://raw.githubusercontent.com/blurskydev/DUOS/main/gui-asset/duolingo-love-icon.png" alt="Duo waving" width="200px">
+<img src="/images/waving.gif" alt="Duo waving" width="200px">
 
 [View cole_bauml other projects](https://github.com/cole-bauml)
 
