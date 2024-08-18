@@ -20,7 +20,7 @@ jobs:
       - run: npm install node-fetch
         
 
-      - run: node index.js
+      - run: node xp.js
         env:
           LESSONS: 50 
           TOKEN: ${{ secrets.TOKEN }} 
