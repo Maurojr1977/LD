@@ -23,4 +23,5 @@ jobs:
       - run: node xp.js
         env:
           LESSONS: 50 
+          userId: ${{ secrets.USER_ID }}
           TOKEN: ${{ secrets.TOKEN }} 
