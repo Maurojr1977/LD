@@ -1,51 +1,39 @@
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
-const { getUserLanguages, headers, removeQuotes } = require('./helper.js')
+const { getUserLanguages, headers, removeQuotes } = require('./helper.js');
 
-const init = async () => {
-    const userLanguages = await getUserLanguages()
-    var token = process.env.token;
-    var userId = process.env.userId;
+(async () => {
+    const { learningLanguage, fromLanguage } = await getUserLanguages();
+    const token = removeQuotes(process.env.token);
+    const userId = removeQuotes(process.env.userId);
 
-    token = removeQuotes(token)
-    userId = removeQuotes(userId)
+    if (!token || !userId) throw new Error('User ID and token are required.');
 
-    if (!token || !userId) {
-        throw new Error('You must specify a user ID and token.')
-    }
+    const parsedLearningLanguage = (learningLanguage === fromLanguage)
+        ? (learningLanguage === 'fr' ? 'en' : 'fr')
+        : learningLanguage;
 
-    let parsedLearningLanguage;
-    if(userLanguages.learningLanguage == userLanguages.fromLanguage){
-        if(userLanguages.learningLanguage != 'fr') parsedLearningLanguage = 'fr'
-        else parsedLearningLanguage = 'en'
-    }
-    else parsedLearningLanguage = userLanguages.learningLanguage
-
-    const classroom = await fetch("https://schools.duolingo.com/api/2/classrooms", {
-        headers: headers,
-        body: JSON.stringify({
-            "classrooms": [
-                {
-                    "from_language": userLanguages.fromLanguage,
-                    "learning_language": parsedLearningLanguage,
-                    "name": "Unlimited Hearts Hack (Deletion will remove your unlimited hearts)"
-                }
-            ]
-        }),
-        method: "POST"
-    }).then((res) => {
-        if(!res.ok){
-            return res.json().then((text) => {
-                if(text.error == 'Classroom already exists'){
-                    throw new Error('You have already done this hack. This hack is permanent. No need to run again.')
-                }
-                else throw new Error(`There was an error with the hack. RES: ${text}`)
+    try {
+        const res = await fetch("https://schools.duolingo.com/api/2/classrooms", {
+            headers,
+            method: "POST",
+            body: JSON.stringify({
+                classrooms: [{
+                    from_language: fromLanguage,
+                    learning_language: parsedLearningLanguage,
+                    name: "Unlimited Hearts Hack (Deletion will remove your unlimited hearts)"
+                }]
             })
+        });
+
+        if (!res.ok) {
+            const { error } = await res.json();
+            throw new Error(error === 'Classroom already exists'
+                ? 'You have already done this hack. This hack is permanent. No need to run again.'
+                : `Error: ${error}`);
         }
 
-        return res.json()
-    });
-
-    console.log("Sucess! To use your unlimited hearts, go to the Duolingo home page, click on your hearts, and under 'Unlimited Hearts' click Turn on or Enable.")
-}
-
-init()
+        console.log("Success! To use your unlimited hearts, go to the Duolingo home page, click on your hearts, and under 'Unlimited Hearts' click Turn on or Enable.");
+    } catch (error) {
+        console.error(error.message);
+    }
+})();

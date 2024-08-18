@@ -1,0 +1,26 @@
+name: 'Complete 1 Lesson Every 24 Hours'
+run-name: 'Your study script is running! Click me to see its progress.'
+
+on:
+  schedule:
+    - cron: '0 0 * * *' 
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+        
+      - run: npm install node-fetch
+        
+
+      - run: node index.js
+        env:
+          LESSONS: 1 
+          TOKEN: ${{ secrets.TOKEN }} 
