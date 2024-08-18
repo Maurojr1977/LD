@@ -11,7 +11,7 @@ Advanced and maintained Duolingo hacks.
 > - **Dont make this to your own tool**
 > - **Must fork before using**
 > - **Dont share your TOKEN or USER_ID to anyone**
-> Don't forget to star ⭐ this repository
+> - Don't forget to star ⭐ this repository
 
 
 ### Preperation (required)
