@@ -5,6 +5,15 @@
 
 Advanced and maintained Duolingo hacks.
 
+> [!IMPORTANT]
+> **Read all** documents in this repo before doing anything!
+> 
+> ### Dont make this to your own tool
+> ### Must fork before using
+> ### Dont share your TOKEN or USER_ID to anyone
+> Don't forget to star ⭐ this repository
+
+
 ### Preperation (required)
 1. Duolingo Auth Token
     - To get this information run the following code in your web browser console:
