@@ -35,8 +35,9 @@ Auto XP Farmer for Duolingo.
 
 
 This upgraded and Optimized Hack have
-- Streak Freeze (Auto do 1 lesson every day to save your streak)
-- Solve every 45 minutes ( Auto do 50 lessons every 45 minutes, can change your own lesson you want in the code
+- Streak Freeze (Automatically do 1 lesson every day to keep your streak.)
+- Solve every 45 minutes (Automatically does 50 lessons every 45 minutes.)
+- Get Unlimited Hearts (Automatically gives your account unlimited hearts.)
 
 ### How to use:
 1. At the top of the page, navigate to the Actions button. 
@@ -50,4 +51,4 @@ This upgraded and Optimized Hack have
 - Will the XP hack affect my Duolingo learning path (complete lessons?)
     - No, it will not. This hack creates fake "practice" lessons so it won't affect your learning path.
 - Is this hack detectable (will I get banned)?
-    - No, it is not. I tested all hacks overnight before I release them. I got 1,000,000 XP on Duolingo account in one night with XP hack, and it's been weeks with no ban.
+    - No, it is not. I tested all hacks overnight before I released them. I got 4,500,000 XP on Duolingo account in one night with the XP hack, and it's been weeks with no ban.
