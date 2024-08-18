@@ -3,7 +3,7 @@
 
 [View cole_bauml other projects](https://github.com/cole-bauml)
 
-Advanced and maintained Duolingo Hacks.
+Advanced and maintained Duolingo hacks.
 
 ### Preperation (required)
 1. Duolingo Auth Token
