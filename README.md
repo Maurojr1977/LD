@@ -32,6 +32,8 @@ Auto XP Farmer for Duolingo.
         - If entering your user ID, name should be: USER_ID
     - Click add secret
     - Repeat for both token and user ID.
+
+
 This upgraded and Optimized Hack have
 - Streak Freeze (Auto do 1 lesson every day to save your streak)
 - Solve every 45 minutes ( Auto do 50 lessons every 45 minutes, can change your own lesson you want in the code
