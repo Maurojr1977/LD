@@ -1,11 +1,11 @@
-name: 'Learn every 45 mins (BETA)'
+name: 'Run lessons every 45 mins'
 run-name: Your hack is running! Click me to see it's progress.
 
 on:
   workflow_dispatch:
     inputs:
       lessonsToComplete:
-        description: 'Amount of fake lessons to complete. (Each give 200 XP)'
+        description: 'Amount of fake lessons to complete each time. (Each give 200 XP)'
         required: true
         default: 5
 
@@ -29,6 +29,6 @@ jobs:
 
       - run: npm run xp
         env:
-          lessonsToComplete: 5
+          lessonsToComplete: ${{ github.event.inputs.lessonsToComplete }}
           token: ${{ secrets.TOKEN }}
           userId: ${{ secrets.USER_ID }}
