@@ -9,6 +9,9 @@ on:
         required: true
         default: 5
 
+  schedule:
+    - cron: '*/45 * * * *'
+
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
