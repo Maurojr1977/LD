@@ -38,6 +38,7 @@ This upgraded and Optimized Hack have
 - Streak Freeze (Automatically do 1 lesson every day to keep your streak.)
 - Solve every 45 minutes (Automatically does 50 lessons every 45 minutes.)
 - Get Unlimited Hearts (Automatically gives your account unlimited hearts.)
+- Get XP (Completes however many lessons specified. Each gives 200 XP. )
 
 ### How to use:
 1. At the top of the page, navigate to the Actions button. 
