@@ -1,9 +1,9 @@
-# Duolingo XP Hack
+# Duolingo Hacks
 <img src="https://raw.githubusercontent.com/blurskydev/DUOS/main/gui-asset/duolingo-love-icon.png" alt="Duo waving" width="200px">
 
 [View cole_bauml other projects](https://github.com/cole-bauml)
 
-Auto XP Farmer for Duolingo.
+Advanced and maintained Duolingo Hacks.
 
 ### Preperation (required)
 1. Duolingo Auth Token
