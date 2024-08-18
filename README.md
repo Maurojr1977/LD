@@ -9,7 +9,7 @@ Advanced and maintained Duolingo hacks.
 > **Read all** documents in this repo before doing anything!
 > 
 > - **Dont make this to your own tool**
-> - **Must fork before using**
+> - **Must fork before use**
 > - **Dont share your TOKEN or USER_ID to anyone**
 > - Don't forget to star ⭐ this repository
 
