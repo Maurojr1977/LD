@@ -1,7 +1,7 @@
 # Duolingo XP Hack
-<img src="https://static.wikia.nocookie.net/duolingo/images/4/4a/Duo_waving.svg" alt="Duo waving" width="200px">
+<img src="https://raw.githubusercontent.com/blurskydev/DUOS/main/gui-asset/duolingo-love-icon.png" alt="Duo waving" width="200px">
 
-[View my other projects](https://github.com/cole-bauml)
+[View cole_bmaul other projects](https://github.com/cole-bauml)
 
 Auto XP Farmer for Duolingo.
 
@@ -32,6 +32,9 @@ Auto XP Farmer for Duolingo.
         - If entering your user ID, name should be: USER_ID
     - Click add secret
     - Repeat for both token and user ID.
+This upgraded and Optimized Hack have
+- Streak Freeze (Auto do 1 lesson every day to save your streak)
+- Solve every 45 minutes ( Auto do 50 lessons every 45 minutes, can change your own lesson you want in the code
 
 ### How to use:
 1. At the top of the page, navigate to the Actions button. 
