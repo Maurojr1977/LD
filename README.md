@@ -10,7 +10,7 @@ Much faster than [rfoel/duolingo-hack](https://github.com/rfoel/duolingo-hack)
 > [!IMPORTANT]
 > **Read all** documents in this repo before doing anything!
 > 
-> - **Dont make this to your own tool**
+> - **Don't make this to your own tool**
 > - **Must fork before use**
 > - **Dont share your TOKEN or USER_ID to anyone**
 > - Don't forget to star ⭐ this repository
@@ -63,4 +63,4 @@ This upgraded and Optimized Hack have
 - Will the XP hack affect my Duolingo learning path (complete lessons?)
     - No, it will not. This hack creates fake "practice" lessons so it won't affect your learning path.
 - Is this hack detectable (will I get banned)?
-    - No, it is not. I tested all hacks overnight before I released them. I got 4,500,000 XP on Duolingo account in one night with the XP hack, and it's been weeks with no ban.
+    - No, it is not. I tested all functions and hacks overnight before I released them. I got 4,500,000 XP on Duolingo account in one night with the XP hack, and it's been weeks with no ban.
