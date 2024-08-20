@@ -4,6 +4,7 @@
 [View cole_bauml other projects](https://github.com/cole-bauml)
 
 Advanced and maintained Duolingo hacks.
+
 Much faster than [rfoel/duolingo-hack](https://github.com/rfoel/duolingo-hack)
 
 > [!IMPORTANT]
